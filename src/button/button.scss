@@ -1,0 +1,9 @@
+.button {
+  padding: var(--sz-padding-ui) calc(var(--sz-padding-ui) * 2);
+  font-size: var(--sz-font-ui);
+  line-height: var(--sz-line-ui);
+  border: 1px solid;
+  border-color: var(--c-font-prim);
+  border-radius: var(--radius);
+  color: var(--c-font-prim);
+}

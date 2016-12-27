@@ -1,0 +1,8 @@
+@import 'normalize';
+@import 'main';
+@import 'button/button';
+@import 'field/field';
+
+main {
+    margin: calc(var(--gu) * 2);
+}

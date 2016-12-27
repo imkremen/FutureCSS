@@ -1,0 +1,43 @@
+:root *,*::before,*::after {
+    box-sizing: border-box;
+} 
+
+:root {  
+  --gu-base: 8px; /*set base grid unit*/
+  --radius: calc(var(--gu) * 0.375); /*set base border-radius*/
+  
+  --c-font-prim: rgba(0,0,0,.78);
+  
+  font-size: calc(var(--gu) * 2);
+  color: var(--c-font-prim);
+} 
+
+:root {
+    --gu: var(--gu-base);
+    --sz-font-ui: calc(var(--gu) * 1.75);
+    --sz-padding-ui: var(--gu);
+
+    .u-dense {
+        --gu: calc(var(--gu-base) / 2);
+        --sz-padding-ui: var(--gu);
+
+        .u-undense {
+            --gu: var(--gu-base);
+            --sz-font-ui: calc(var(--gu) * 1.75);
+            --sz-padding-ui: var(--gu);
+        }
+    }
+}
+
+:root .u-size_s {
+  --sz-padding-ui: calc(var(--gu) / 2);
+  --sz-font-ui: calc(var(--gu) * 1.625);
+  --sz-line-ui: calc(var(--gu) * 1.75);
+}
+
+:root .u-dense .u-size_s,
+:root .u-dense.u-size_s {
+  --sz-padding-ui: calc(var(--gu) / 2);
+  --sz-font-ui: calc(var(--gu) * 3.25);
+  --sz-line-ui: calc(var(--gu) * 3.5);
+}
